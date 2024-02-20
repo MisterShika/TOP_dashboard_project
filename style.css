@@ -1,19 +1,154 @@
 @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 body{
-    display: flex;
+    display: grid;
     width: 100%;
     min-height: 100vh;
+    grid-template-columns: 250px 1fr;
+}
+a{
+    text-decoration: none;
 }
 
+
+/** 
+
+Side 
+
+**/
 .mainSide{
-    min-width: 250px;
-    background-color: #38bdf8;
-}
-.mainSide h1{
-    color: #fff;
+    display: inline-block;
+    padding: 20px 15px;
+    background-color: #1992d4;
 }
 .mainSide a{
     color: #fff;
-    text-decoration: none;
+}
+.mainSide i{
+    display: inline-block;
+    min-width: 35px;
+    padding-right: 10px;
+    text-align: center;
+}
+.dashTop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.dashTop h1,
+.dashTop i{
+    color: #fff;
+    font: 1.75rem/1rem 'Roboto', sans-serif;
+}
+.dashTop h1{
+    font: 1.75rem/1rem 'Roboto', sans-serif;
+}
+.dashMid{
+    margin-bottom: 40px;
+}
+.dashMid a,
+.dashBot a{
+    display: inline-block;
+    font: 1.1rem/1rem 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+/** 
+
+Main Area 
+
+**/
+.topBar{
+    padding: 15px 25px;
+}
+
+
+/** Upper Area **/
+.upperTop{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.upperTop img{
+    max-width: 50px;
+}
+.upperTop .searchArea form{
+    display: flex;
+    height: 100%;
+    padding-right: 10%;
+    align-items: center;
+}
+.upperTop .searchArea button{
+    background: none;
+    border: none;
+}
+.upperTop .searchArea input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+}
+.upperTop .notificationArea{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.upperTop .notificationArea img{
+    max-width: 100%;
+    max-height: 60px;
+    border-radius: 100px;
+}
+
+.lowerTop{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.lowerTop .profileInfo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.lowerTop .profileInfo img{
+    width: 100%;
+    height: auto;
+}
+.lowerTop .actionButtons ul{
+    display: grid;
+    height: 100%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.lowerTop .actionButtons li{
+    padding-left: 20px;
+}
+.lowerTop .actionButtons a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font: 1rem/1rem 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1992d4;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/** Lower Area **/
+.bottomBlock{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projectContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/** Temp **/
+img{
+    max-width: 250px;
+    height: auto;
 }
