@@ -1,5 +1,10 @@
 @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
+/**
+
+General
+
+**/
 body{
     display: grid;
     width: 100%;
@@ -8,6 +13,14 @@ body{
 }
 a{
     text-decoration: none;
+}
+.indivBlock{
+    padding: 20px 15px;
+    border-radius: 10px;
+    font: .9rem/1.4rem 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
 }
 
 
@@ -57,11 +70,14 @@ Side
 
 /** 
 
-Main Area 
+Top Bar
 
 **/
 .topBar{
+    position: relative;
     padding: 15px 25px;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+    z-index: 5;
 }
 
 
@@ -92,25 +108,53 @@ Main Area
 }
 .upperTop .notificationArea{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 3fr;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.upperTop .notificationArea h2{
+    text-align: left;
+    font-size: 1.275rem;
+}
+.upperTop .notificationArea div{
+    text-align: right;
+}
+.upperTop .notificationArea i{
+    color: #000;
+    font-size: 1.25rem;
 }
 .upperTop .notificationArea img{
     max-width: 100%;
-    max-height: 60px;
+    max-height: 40px;
     border-radius: 100px;
+    margin: 0 auto;
 }
 
+/** Lower area **/
 .lowerTop{
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
 .lowerTop .profileInfo{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 .lowerTop .profileInfo img{
-    width: 100%;
+    width: 60px;
     height: auto;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.lowerTop .profileInfo span{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.lowerTop .profileInfo h2{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .lowerTop .actionButtons ul{
     display: grid;
@@ -135,16 +179,111 @@ Main Area
 }
 
 
-/** Lower Area **/
-.bottomBlock{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+/** 
+
+Main Area
+
+**/
+
+.bottomBlock h3{
+    padding: 20px 0 10px 0;
+    font: 1.1rem/1rem 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.bottomBlock h4{
+    padding-bottom: 5px;
+    font: 1rem/1rem 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+.bottomBlock a{
+    color: #636363;
 }
 
-.projectContainer{
+/** Project Area **/
+.bottomBlock{
     display: grid;
+    padding: 15px 0;
+    grid-template-columns: 3fr 1fr;
+    background-color: #e2e8f0;
+}
+.bottomBlock .projectBlock h3{
+    margin-left: 15px;
+}
+.bottomBlock .projectContainer{
+    display: grid;
+    padding: 0 5px;
     grid-template-columns: 1fr 1fr;
 }
+.bottomBlock .indivProject{
+    position: relative;
+    margin: 10px;
+    padding-bottom: 35px;
+    border-left: 5px solid #f0b429;
+}
+.bottomBlock .indivProject .actionLinks{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #333;
+}
+.bottomBlock .indivProject .actionLinks ul{
+    display: flex;
+}
+.bottomBlock .indivProject .actionLinks li{
+    margin-left: 15px;
+}
+
+/** Announcement/Side area **/
+.bottomBlock .sideBlock{
+    padding: 0 10px;
+}
+.bottomBlock .announcementBlock,
+.bottomBlock .trendingBlock{
+    margin: 10px 0 15px 0;
+}
+/* .bottomBlock .announcementBlock{
+    padding: 30px 20px;
+} */
+.bottomBlock .announcementBlock li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.bottomBlock .announcementBlock li:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.bottomBlock .trendingBlock a{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.bottomBlock .trendingBlock li{
+    margin: 10px 0;
+}
+.bottomBlock .trendingBlock li:first-child{
+    margin-top: 0;
+}
+.bottomBlock .trendingBlock li:last-child{
+    margin-bottom: 0;
+}
+.bottomBlock .trendingBlock a div:first-child{
+    display: flex;
+}
+.bottomBlock .trendingBlock a div:last-child{
+    padding-left: 15px;
+}
+.bottomBlock .trendingBlock img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.bottomBlock .trendingBlock h5{
+    color: #000;
+}
+
 
 
 /** Temp **/
